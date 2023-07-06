@@ -1,0 +1,151 @@
+:root {
+    --uni-font-family: Arial,
+        Helvetica,
+        sans-serif;
+    --min-width: 360px;
+    --max-width: 60%;
+    --almost-white: #EFEBE0;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+p,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--uni-font-family);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--almost-white);
+}
+
+.container {
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    height: auto;
+}
+
+.task-header {
+    margin: 0 auto;
+    color: #9A91A4;
+}
+
+.task-header .btn i {
+    font-size: 1.5rem;
+    color: #9A91A4 !important;
+}
+
+#form .status-btn,
+#form .assign-btn {
+    color: #000;
+}
+
+.modal-link:hover {
+    cursor: pointer;
+}
+
+
+/* footer  */
+.fixed-footer {
+    background-color: var(--almost-white) !important;
+}
+
+.fixed-footer i {
+    color: #9A91A4 !important;
+}
+
+/* #navbarNavBtn .navbar-toggler-icon {
+    color: #9A91A4 !important;
+} */
+
+.fixed-footer .navbar {
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.toggle-delete-btn {
+    display: none;
+}
+
+/* Card  */
+.card {
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    border-style: none;
+    color: var(--almost-white);
+}
+
+.dropdown {
+    display: grid;
+    grid-template-columns: .5fr 3fr .5fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#statusMenu,
+.square-btn,
+.task-des-btn,
+.dropdown-item {
+    color: var(--almost-white);
+    font-size: 1.3rem;
+}
+
+.card .task-des {
+    color: #000;
+}
+
+#assignMenu {
+    color: var(--almost-white);
+    font-size: 1rem;
+    border: 1px solid var(--almost-white);
+    border-radius: 50%;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.status1 {
+    background: #597290;
+}
+
+.status2 {
+    background: #728485;
+}
+
+.status3 {
+    background: #CDBB7E;
+}
+
+.card.selected {
+    background-color: #A19FAC;
+}
+
+@media all and (max-width: 650px) {
+    .task-header .title {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 925px) and (min-width: 650px) {
+    .task-header .title {
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (min-width: 925px) {
+    .task-header .title {
+        font-size: 1.4rem;
+    }
+}
